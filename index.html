@@ -11,6 +11,48 @@
      border-radius: 50%;
     }
    </style>
+
+   <title>Half Page Background Image</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .half-page-bg {
+          
+              /* Flex item to take 50% of the parent height */
+            flex: 0 0 50%;
+            background-image:
+url('https://media.geeksforgeeks.org/wp-content/uploads/20210511160813/g4g.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .half-page-color {
+            flex: 0 0 50%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="half-page-bg"></div>
+    <div class="half-page-color">
+        <h3>Creating half page background image using flexbox</h3>
   </head>
   
   <body>
